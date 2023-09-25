@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(221, 255, 243);
+}
+#opcions{
+    background-color: white;
+}
+#opcions p {
+    padding: 3px;
+}
+#opcions p:hover{
+    background-color: coral; 
+    cursor: pointer;
+}
+table{
+    border-color: black;
+}/*
+table td{
+    border: 1px solid black;
+    
+    background-color: rgb(163, 255, 212);
+}
+table tr{
+    border: 2px solid black;
+}
+
+#taula tr:hover td{
+    cursor: pointer;
+    background-color: rgb(240, 119, 6);
+}
+#taula td:hover{
+    font-weight: bold;
+} */
+#linea{
+    display: inline-flex;
+}
+#linea div{
+    margin-right: 100px;
+}
