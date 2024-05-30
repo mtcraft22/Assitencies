@@ -19,7 +19,7 @@
 </head>
 <body>
     <div id="taula-contenidor"></div>
-    <a href="../../servidor/inici/Assistenciesinici.php"><button>Dessa i  Torna al inici </button></a>
+    <a href="../../servidor/inici/Assistenciesinici.php"><button>Dessa i Torna al inici </button></a>
     <a href="../../servidor/login/tanca.php"><button >Tancar la sesió</button></a>
 </body>
 </html>

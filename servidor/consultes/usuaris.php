@@ -1,5 +1,7 @@
 <?php
-    
+    ini_set('display_errors', '1');
+    ini_set('display_startup_errors', '1');
+    error_reporting(E_ALL);
     require("dadesconexio.php"); 
     if (!isset($_GET["extreure"])){
         $extreureclasse=false;
@@ -29,20 +31,25 @@
     
 
     $conexio = new PDO('mysql:host='._HOST_NAME_.';dbname='._DATABASE_NAME_, _USER_NAME_, _DB_PASSWORD,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-    if($Usuari){
+    if($Usuari&&$Contra!=false){
         $sql =" DELETE FROM `usuaris` WHERE `USUARI`='$Usuari' ";
         $resultat=$conexio->prepare($sql);
         $resultat->execute();
     }
 
     if($Contra){
+        echo "hola";
         $usu = htmlentities(addslashes($Usuari));
         $contra = htmlentities(addslashes($Contra));
-        $conencript=password_hash($contra,PASSWORD_DEFAULT);
+        $conencript=password_hash($contra,PASSWORD_BCRYPT);
         $tipususuari=htmlentities(addslashes($Tipus));
         $consulta = "INSERT INTO USUARIS (USUARI,CONTRASENYA,TIPUSUSUARI) values ('$usu','$conencript','$tipususuari')";
+
+        echo "adios";
         $resultat=$conexio->prepare($consulta);
+        
         $resultat->execute();
+        
     }
     
     if($extreureclasse){

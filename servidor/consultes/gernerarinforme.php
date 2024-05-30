@@ -22,9 +22,9 @@
     if($Month){
         $dates_a_consultar=array("Num","Nom","Primer_Cognom","Segon_Cognom");
         $period = new DatePeriod(
-            new DateTime("2023-".$Month."-1"),
+            new DateTime("2024-".$Month."-1"),
             new DateInterval('P1D'),
-            new DateTime("2023-".$Month."-31")
+            new DateTime("2024-".$Month."-31")
         );
         $Select = "SELECT * FROM $Class ORDER BY 'Num' ";
         $sqlQuery = $databaseConnection->prepare($Select);
