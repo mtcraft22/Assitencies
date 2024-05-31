@@ -1,7 +1,5 @@
 <?php
-    ini_set('display_errors', '1');
-    ini_set('display_startup_errors', '1');
-    error_reporting(E_ALL);
+  
     require("dadesconexio.php"); 
     if (!isset($_GET["extreure"])){
         $extreureclasse=false;
@@ -29,8 +27,8 @@
         $Tipus=$_GET["Tipus"];
     }
     
-
-    $conexio = new PDO('mysql:host='._HOST_NAME_.';dbname='._DATABASE_NAME_, _USER_NAME_, _DB_PASSWORD,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+    try {
+        $conexio = new PDO('mysql:host='._HOST_NAME_.';dbname='._DATABASE_NAME_, _USER_NAME_, _DB_PASSWORD,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
     if($Usuari&&$Contra!=false){
         $sql =" DELETE FROM `usuaris` WHERE `USUARI`='$Usuari' ";
         $resultat=$conexio->prepare($sql);
@@ -59,6 +57,10 @@
         $taula=$resultat->fetchAll(PDO::FETCH_ASSOC);
         echo json_encode($taula);
     }
+    } catch (PDOException $e) {
+        echo $e;
+    }
+    
 
 ?>
 

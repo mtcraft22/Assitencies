@@ -37,7 +37,7 @@
             }
             
         }
-        $dtf=new DateTime("2023-".$Month."-31");
+        $dtf=new DateTime("2024-".$Month."-31");
 
         if(isset($taula[0][$dtf->format("d_m_Y")])){
             array_push($dates_a_consultar,$dtf->format("d_m_Y"));
