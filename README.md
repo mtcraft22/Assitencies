@@ -34,17 +34,17 @@ Asistencias es una aplicación web destinada a facilitar el proceso de pasar lis
    composer install
    ```
 3. Desde phpmyaadmin importamos la bbdd:
-         1. Acede el entorno:
+   1. Acede el entorno:
    
              https://[tu ip]:[tu puerto]/phpmyadmin
    
-         2. Creamos una bbdd llamada assistencies.
+   2. Creamos una bbdd llamada assistencies.
    
-         3. Luego selecionmos la bbdd y en el menu de aariva selecionamos importar.
+   3. Luego selecionmos la bbdd y en el menu de aariva selecionamos importar.
    
-     4. En el paartaaado de seleción de archivo selecionmos el script sl provisto en este repositorio.
+   4. En el apartado de seleción de archivo selecionamos el script sl provisto en este repositorio.
    
-     5. I finalmente pulsmos el boton de importar situdo bjo de todo de la pagina.
+   5. I finalmente pulsmos el boton de importar situdo bjo de todo de la pagina.
    
 4. Copiamos la carpeta Assitencies en nuesto servidor web.
 
