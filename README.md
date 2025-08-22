@@ -1,30 +1,30 @@
-# Assitencies
+# Asistencias
 
-**Programa de control d’assistència** per a escoles i instituts, desenvolupat en **software lliure**.
+**Programa de control de asistencia** para escuelas e institutos, desarrollado en **software libre**.
 
-## Descripció
+## Descripción
 
-Assitencies és una aplicació web destinada a facilitar el procés de passar llista en entorns escolars. Està estructurada per a ser fàcil d'adaptar i d'utilitzar, amb una interfície senzilla i funcionalitats essencials per a la gestió d'assistència.
+Asistencias es una aplicación web destinada a facilitar el proceso de pasar lista en entornos escolares. Está estructurada para ser fácil de adaptar y de usar, con una interfaz sencilla y funcionalidades esenciales para la gestión de asistencia.
 
-## Estructura del projecte
+## Estructura del proyecto
 
-- **client/** — Conté el codi frontend (HTML, CSS, JavaScript).
-- **estils/** — Fulls d’estil CSS per a la presentació visual.
-- **media/** — Arxius multimèdia (imatges, icones…).
-- **servidor/** — Backend i lògica del servidor (PHP, connexions, lògica de control d’assistència).
-- **BBDD 31-3-23 (ben fet).sql** — Script SQL per crear/omplir la base de dades (data: 31 de març de 2023).
-- **composer.json** — Gestor de dependències de PHP.
-- **enviarPDF.php** — Script per generar i enviar un PDF (possiblement amb la llista d'assistència).
+- **client/** — Contiene el código frontend (HTML, CSS, JavaScript).  
+- **estilos/** — Hojas de estilo CSS para la presentación visual.  
+- **media/** — Archivos multimedia (imágenes, íconos…).  
+- **servidor/** — Backend y lógica del servidor (PHP, conexiones, lógica de control de asistencia).  
+- **BBDD 31-3-23 (bien hecho).sql** — Script SQL para crear/llenar la base de datos (fecha: 31 de marzo de 2023).  
+- **composer.json** — Gestor de dependencias de PHP.  
+- **enviarPDF.php** — Script para generar y enviar un PDF (posiblemente con la lista de asistencia).  
 
-## Requisits
+## Requisitos
 
-- Servei web compatible amb **PHP** (versió recomanada).
-- **MySQL** (o similar) per executar el script SQL de la BBDD.
-- **Composer** per gestionar dependències PHP (si s’utilitza).
+- Servicio web compatible con **PHP** (versión recomendada).  
+- **MySQL** (o similar) para ejecutar el script SQL de la base de datos.  
+- **Composer** para gestionar dependencias PHP (si se utiliza).  
 
-## Instal·lació i configuració
+## Instalación y configuración
 
-1. Clona el repositori:
+1. Clona el repositorio:  
    ```bash
    git clone https://github.com/mtcraft22/Assitencies.git
    cd Assitencies
