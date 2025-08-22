@@ -391,7 +391,7 @@ CREATE TABLE `usuaris` (
 --
 
 INSERT INTO `usuaris` (`ID`, `USUARI`, `CONTRASENYA`, `TIPUSUSUARI`) VALUES
-(1, 'super', '$2y$10$3MKTzePalI.hFXsIrmX0JeeKodgjy2gvspSGX3OEEu5EEeH1FtF46', 'Administrador');
+(1, 'super', '$2a$12$E0sPtiNPmbP249LDpER0bueAm16sX1/9t32gUJI4HNl8kPTLOqXAy', 'Administrador');
 
 
 --
