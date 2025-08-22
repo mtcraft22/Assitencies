@@ -1,6 +1,6 @@
 # Asistencias
 
-**Programa de control de asistencia** para escuelas e institutos, desarrollado en **software libre**.
+**Programa de control de asistencia** para escuelas e institutos.
 
 ## Descripción
 
@@ -14,7 +14,7 @@ Asistencias es una aplicación web destinada a facilitar el proceso de pasar lis
 - **servidor/** — Backend y lógica del servidor (PHP, conexiones, lógica de control de asistencia).  
 - **BBDD 31-3-23 (bien hecho).sql** — Script SQL para crear/llenar la base de datos (fecha: 31 de marzo de 2023).  
 - **composer.json** — Gestor de dependencias de PHP.  
-- **enviarPDF.php** — Script para generar y enviar un PDF (posiblemente con la lista de asistencia).  
+- **enviarPDF.php** — Script para generar y enviar un PDF (con la lista de asistencia).  
 
 ## Requisitos
 
@@ -35,10 +35,19 @@ Asistencias es una aplicación web destinada a facilitar el proceso de pasar lis
    ```
 3. Desde phpmyaadmin importamos la bbdd:
          1. Acede el entorno:
-           ```https://[tu ip]:[tu puerto]/phpmyadmin```
+   
+             https://[tu ip]:[tu puerto]/phpmyadmin
+   
          2. Creamos una bbdd llamada assistencies.
-         3. Lego selecionmos la bbdd y en el menu de aariva selecionamos importar.
+   
+         3. Luego selecionmos la bbdd y en el menu de aariva selecionamos importar.
+   
      4. En el paartaaado de seleción de archivo selecionmos el script sl provisto en este repositorio.
+   
      5. I finalmente pulsmos el boton de importar situdo bjo de todo de la pagina.
-4.Copimos la carpeta Assitencies en nuesto servidor web.
-5. I podesmos aceder a la aplicación 
+   
+4. Copiamos la carpeta Assitencies en nuesto servidor web.
+
+5. I podemos aceder a la aplicación
+
+   Usurio: super Contraseña: super
